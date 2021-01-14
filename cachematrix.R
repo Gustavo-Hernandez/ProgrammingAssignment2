@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
   
   #Calculate inverse
   mt <- x$get()
-  localInverse <- solve(mt)
+  localInverse <- solve(mt, ...)
   
   #Assign Calculated Inverse
   x$setInverse(localInverse)
